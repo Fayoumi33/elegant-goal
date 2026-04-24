@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --goldenrod: #daa520;
+    --dark-charcoal: #333333;
+    --medium-gray: #999999;
+    --light-warm: #f5f5f0;
+    --translucent-gold: rgba(218, 165, 32, 0.12);
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 43 74% 49%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    font-family: 'Cairo', 'Geist', system-ui, -apple-system, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html[dir="rtl"] {
+    direction: rtl;
+  }
+
+  html[dir="ltr"] {
+    direction: ltr;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Geist', 'Cairo', sans-serif;
+  }
+
+  .section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .content-max-width {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .text-golden {
+    color: #daa520;
+  }
+
+  .bg-golden {
+    background-color: #daa520;
+  }
+
+  .bg-charcoal {
+    background-color: #333333;
+  }
+
+  .text-charcoal {
+    color: #333333;
+  }
+
+  .label-text {
+    font-family: 'Geist', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #daa520;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
